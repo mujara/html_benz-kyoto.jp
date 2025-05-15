@@ -1,0 +1,401 @@
+@use "../_setting" as s;
+
+
+// .globalNaviSmall　グローバルナビ ハンバーガーメニュー
+.globalNaviSmall {
+	&__icon {
+		width: 3em;
+		height: 3em;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	&__iconButton{
+		width: 3em;
+		height: 3em;
+		cursor:pointer;
+		float: right;
+		display: block;
+		background: rgba(0,0,0,0.9);
+		position: relative;
+		margin:0.5em 0.5em 0.5em 0.5em;
+	  	//border-radius: 0.3em 0.3em 0.3em 0.3em;
+		z-index:999;
+	}
+	&__icon span {
+	    width: 2em;
+	    height: 1px;
+	    display: block;
+	    background: #FFF;
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    margin-left: -33%; 
+	}
+	.modal{
+		z-index:100;
+	}
+}
+	
+
+.globalNaviSmall{
+	&__icon--type01{
+		// ハンバーガーメニュー 押す前
+		span {
+		  -webkit-transition: all 0.3s;
+		          transition: all 0.3s;
+		  -webkit-transform: rotate(0deg);
+		      -ms-transform: rotate(0deg);
+		          transform: rotate(0deg); 
+		}
+		.iconButton--top {
+		  -webkit-transform: translateY(-0.7em);
+		      -ms-transform: translateY(-0.7em);
+		          transform: translateY(-0.7em); 
+		}
+		.iconButton--bottom {
+		  -webkit-transform: translateY(0.7em);
+		      -ms-transform: translateY(0.7em);
+		          transform: translateY(0.7em); 
+    	}
+
+    	// ハンバーガーメニュー hover
+		&:hover {
+			.iconButton--top {
+			  -webkit-transform: translateY(-0.8em);
+			      -ms-transform: translateY(-0.8em);
+			          transform: translateY(-0.8em);
+			}
+			.iconButton--bottom {
+			  -webkit-transform: translateY(0.8em);
+			      -ms-transform: translateY(0.8em);
+			          transform: translateY(0.8em); 
+          	}
+    	}
+
+    	// ハンバーガーメニュー 押した後の動き
+		&.is-open {
+			.iconButton--middle {
+			  background: rgba(255, 255, 255, 0);
+			}
+			.iconButton--top {
+			  -webkit-transform: rotate(-45deg) translateY(0px);
+			      -ms-transform: rotate(-45deg) translateY(0px);
+			          transform: rotate(-45deg) translateY(0px); 
+			}
+			.iconButton--bottom {
+				  -webkit-transform: rotate(45deg) translateY(0px);
+				      -ms-transform: rotate(45deg) translateY(0px);
+				          transform: rotate(45deg) translateY(0px);
+			}
+    	}
+	}
+}
+
+
+
+/* .globalNaviSmall　スマホグローバルナビ
+------------------------------------------ */
+.globalNaviSmall {
+	display:block;
+	width:100%;
+	position: fixed;
+	z-index:888;
+	top:0;
+	left:0;
+	@include s.media(m){
+		display: none;
+	}
+	&__siteTitle{
+		display:block;
+		width:95%;
+		//border-bottom:#FFF solid 1px;
+		margin:4em auto 2em;
+		text-align:center;
+		span{
+			display:block;
+			margin:0 auto 1em;
+			width:9em;
+		}
+		img{
+			width:100%;
+		}
+		small{
+			color:#FFF;
+			font-size:0.6em;
+			@include s.fontType01(Regular);
+		}
+	}
+	&__menu{
+		width:100%;
+	  	max-height: 100vh;
+		display:block;
+		&__inner{
+			width:100%;
+		  	min-height: 100vh;
+			overflow-x:hidden;
+			overflow-y:auto;
+  			padding: 2em;
+			display:block;
+		}
+		&__main{
+			li {
+				border-top:#FFF dotted 1px;
+				display:block;
+				position:relative;
+				a{
+					padding:0.7em 0 0.7em 1em;
+					display:block;
+					color:#FFF;
+					position:relative;
+					&:hover{
+						color:#999;
+					}
+					&:after{
+						content:"\03e";
+						font-size:0.6em;
+						position:absolute;
+						top:50%;
+						right:2em;
+						margin-top:-0.7em;
+					}
+				}
+				span{
+					padding:0.7em 0 0.7em 1em;
+					display:block;
+					color:#BBB;
+					position:relative;
+				}
+				li{
+					border-top:#666 dotted 1px;
+				}
+			}
+			>li:last-child {
+				margin-bottom:3em;
+				border-bottom:#FFF dotted 1px;
+			}
+		}
+		&__sub li{
+  			padding:0 0 0 1em;
+		}
+	}
+	.modal__overlay {
+		background: none;
+	}
+	.modal__container {
+		background:rgba(0,0,0,.8);
+		backdrop-filter: blur(1.2em);
+		width:100%;
+		max-width: 100%;
+		border-radius: 0;
+  		padding: 0;
+		min-height: 100vh;
+	}
+	&__information{
+		color:#FFF;
+		@include s.fontType01(Regular);
+		line-height:1.9;
+		font-size:0.8em;
+		margin-bottom:1.5em;
+	}
+	&__sns{
+		width:100%;
+		display:flex;
+		margin-bottom:5em;
+		a{
+			display:inline-block;
+			padding-right:2em;
+		}
+	}
+}
+
+
+/* Safari */
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu {
+  min-height: -webkit-fill-available;
+}
+_:lang(x)+_:-webkit-full-screen-document, .globalNaviSmall__menu__inner {
+  min-height: -webkit-fill-available;
+}
+
+
+
+
+/* .globalNavi　グローバルナビ
+------------------------------------------ */
+
+.globalNavi{
+	display:none;
+	@include s.media(m){
+		display:block;
+	}
+	&__menu{
+		&__main{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			>li {
+				//width: 16.6%;
+				height: 3.5em;
+				padding:1em 1em 0;
+				text-align:center;
+				display:block;
+			   	//position: relative; /*z-indexの指定や子要素の基準とするために指定*/
+			   	z-index: 2; /*ドロップダウンしたメニューが隠れないように*/
+			}
+			li{
+				a {
+					text-decoration:none;
+					display:block;
+					color:#FFF;
+					font-size:0.9em;
+					@include s.fontType01(Regular);
+					&:hover {
+						text-decoration:none;
+						color:#666;
+					}
+				}
+				span {
+					display:block;
+					color:#FFF;
+					font-size:0.9em;
+					@include s.fontType01(Regular);
+				}
+			}
+		}
+	}
+}
+
+
+
+.globalNavi__menu__main>li{
+	&::before{
+		content: "";
+		width:3.5em;
+		height:3px;
+		position:absolute;
+		top:8.7em;
+		transition:all .3s ease;
+		opacity:0;
+		background:#FFF;
+		transform: scale(0);
+		@include s.media(xl){
+		}
+	}
+	&:hover::before{
+		display:block;
+		transform: scale(1);
+	}
+	&:nth-child(2)::before{
+		@include s.media(xl){
+		}
+	}
+	&:nth-child(2):hover::before{
+		opacity:1;
+	}
+	&:nth-child(3)::before{
+		width:4em;
+		@include s.media(xl){
+		}
+	}
+	&:nth-child(3):hover::before{
+		opacity:1;
+	}
+}
+
+#wrapper .is-scroll .globalNavi__menu__main>li{
+	&::before{
+		top:2.7em;
+	}
+}
+
+/* .globalNavi__menu__sub　グローバルナビサブメニュー
+------------------------------------------ */
+
+
+
+
+#wrapper .globalNavi__menu__sub {
+	width:100vw;
+	opacity: 0;  /*サブメニューは最初は非表示にしておく*/
+	visibility: hidden;  /*サブメニューは最初は非表示にしておく*/
+	position: absolute;
+	top: 11em;
+	left: 50%;
+	margin-left:-50vw;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	background:rgba(255,255,255,.7);
+	backdrop-filter: blur(10px);
+	padding:1.5em 0 2em;
+	box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.1);
+	li{
+		//width:30%;
+		height:auto;
+		padding: 0;  /*親メニューのパディングを解除*/
+		margin:0 1.5%;
+		*margin-top:-8px;
+		display:block;
+		line-height:1.5em;
+		margin-bottom:0;
+		a{
+			@include s.fontType03(Medium);
+			padding: 0.6em 0;
+			text-decoration:none;
+			color: #000;
+			display:block;
+			text-align:left;
+			position:relative;
+			&:hover{ 
+				color:#666;
+			}
+		}
+	}
+	>.inBase{
+		position:relative;
+		display:block;
+	}
+	p{
+		@include s.fontType01(Regular);
+		color:#FFF;
+		margin-bottom:0.7em;
+		text-align:center;
+	}
+	&__list{
+		display:block;
+		width:100%;
+		padding-left:15%;
+	}
+}
+
+#wrapper .globalNavi ul li:hover .globalNavi__menu__sub {
+	top: 9.5em;
+	left: 50%;
+	margin-left:-50vw;
+	visibility:visible;
+	opacity: 1;
+	display: block;    /*マウスオーバー時にサブメニューを表示する*/
+	.inBase{
+		display:block;
+	}
+}
+
+#wrapper .is-scroll .globalNavi ul li .globalNavi__menu__sub {
+	top: 5.5em;
+}
+#wrapper .is-scroll .globalNavi ul li:hover .globalNavi__menu__sub {
+	top: 3.5em;
+}
+
+.globalNavi.globalNaviAccordion ul.globalNavi__menu__sub li{
+  	padding:0;
+}
+
+/* When Active Page */
+/*body#■■ .globalNavi ul.globalNavi__menu__main li:nth-child(■) ul.globalNavi__menu__sub li:nth-child(■) a { color:#000; background-color: #DDD; pointer-events: none; }*/
+
+
+
+
+

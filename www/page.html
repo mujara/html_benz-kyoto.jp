@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="home" class="home is-pageFade">
+<div class="page-transition"></div>
+
+<div id="wrapper">
+	<header id="header" class="header clearfix">
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<div class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="京都でゲレンデで中心としたベンツのカスタム、修理専門店 /株式会社MBworks" /></a></div>
+				<div class="header__contactBox">
+					<div class="header__tel">075-201-4559</div>
+					<div class="header__mail"><a href="<?php echo home_url(); ?>/contact">CONTACT US</a></div>
+					<div class="header__line"><a href="https://page.line.me/232ozwtd?openQrModal=true" target="_blank">OFFICIAL LINE</a></div>
+				<!-- /.header__siteTitleBox --></div>
+			<!-- /.header__siteTitleBox --></div>
+			
+		<div id="pageTopFix">
+			<nav class="globalNavi">
+				<div class="inBase clearfix">
+					<ul class="globalNavi__menu__main">
+						<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+						<li><span>カスタム</span>
+							<div class="globalNavi__menu__sub">
+	                            				<div class="inBase clearfix">
+									<div class="globalNavi__menu__sub__list">
+										<p>カスタム</p>
+										<ul>
+											<li><a href="<?php echo home_url(); ?>/custom-class01">Aクラス、Bクラス・CLA・GLA</a></li>
+											<li><a href="<?php echo home_url(); ?>/custom-class02">Cクラス・GLC</a></li>
+											<li><a href="<?php echo home_url(); ?>/custom-class03">Eクラス・GLE・CLS</a></li>
+											<li><a href="<?php echo home_url(); ?>/custom-class04">Sクラス・GLS</a></li>
+											<li><a href="<?php echo home_url(); ?>/custom-class05">Gクラス（ゲレンデ）カスタム</a></li>
+											<li><a href="<?php echo home_url(); ?>/custom-class-other">その他（Vクラス・AMG GTなど）</a></li>
+											<li><a href="<?php echo home_url(); ?>/movie">動画で見る施工事例</a></li>
+										</ul>
+									<!-- /.globalNavi__menu__subList --></div>
+								<!-- /.inBase --></div>
+							<!-- /.globalNavi__menu__sub --></div> 
+						</li>
+						<li><span>整備・修理</span>
+							<div class="globalNavi__menu__sub">
+	                            				<div class="inBase clearfix">
+									<div class="globalNavi__menu__sub__list">
+										<p>整備・修理</p>
+										<ul>
+											<li><a href="<?php echo home_url(); ?>/engine-repair">エンジン修理</a></li>
+											<li><a href="<?php echo home_url(); ?>/sheet-metal-painting">板金塗装</a></li>
+											<li><a href="<?php echo home_url(); ?>/oil-battery">オイル・バッテリー交換</a></li>
+											<li><a href="<?php echo home_url(); ?>/tire-suspension">タイヤ交換・サスペンション</a></li>
+											<li><a href="<?php echo home_url(); ?>/electrical-component">電装関係</a></li>
+										</ul>
+									<!-- /.globalNavi__menu__subList --></div>
+								<!-- /.inBase --></div>
+							<!-- /.globalNavi__menu__sub --></div> 
+						</li>
+						<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+						<li><a href="<?php echo home_url(); ?>/coding">コーディング</a></li>
+						<li><a href="<?php echo home_url(); ?>/sale">中古車販売</a></li>
+						<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+						<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+						<li><a href="<?php echo home_url(); ?>/blog">施工ブログ</a></li>
+					</ul>
+				<!-- /.inBase --></div>
+			<!-- /.globalNavi --></nav>
+
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__siteTitle"><small>京都のMercedes-Benz専門店</small><span><img src="img/common/siteTitle.svg" alt="京都でゲレンデで中心としたベンツのカスタム、修理専門店 /株式会社MBworks" /></span></div>
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+										<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+										<li><span>カスタム</span>
+								            		<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/custom-class01">Aクラス、Bクラス・CLA・GLA</a></li>
+												<li><a href="<?php echo home_url(); ?>/custom-class02">Cクラス・GLC</a></li>
+												<li><a href="<?php echo home_url(); ?>/custom-class03">Eクラス・GLE・CLS</a></li>
+												<li><a href="<?php echo home_url(); ?>/custom-class04">Sクラス・GLS</a></li>
+												<li><a href="<?php echo home_url(); ?>/custom-class05">Gクラス（ゲレンデ）カスタム</a></li>
+												<li><a href="<?php echo home_url(); ?>/custom-class-other">その他（Vクラス・AMG GTなど）</a></li>
+												<li><a href="<?php echo home_url(); ?>/movie">動画で見る施工事例</a></li>
+											</ul> 
+							            		</li>
+										<li><span>整備・修理</span>
+								            		<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/engine-repair">エンジン修理</a></li>
+												<li><a href="<?php echo home_url(); ?>/sheet-metal-painting">板金塗装</a></li>
+												<li><a href="<?php echo home_url(); ?>/oil-battery">オイル・バッテリー交換</a></li>
+												<li><a href="<?php echo home_url(); ?>/tire-suspension">タイヤ交換・サスペンション</a></li>
+												<li><a href="<?php echo home_url(); ?>/electrical-component">電装関係</a></li>
+											</ul> 
+							            		</li>
+										<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+										<li><a href="<?php echo home_url(); ?>/coding">コーディング</a></li>
+										<li><a href="<?php echo home_url(); ?>/sale">中古車販売</a></li>
+										<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+										<li><a href="<?php echo home_url(); ?>/blog">施工ブログ</a></li>
+									</ul>
+									<div class="globalNaviSmall__information">
+										〒612-8495　京都府京都市伏見区久我森の宮町15-10<br>
+										TEL:075-201-4559 / FAX:075-204-0427<br>
+										営業時間:平日 9:00 ～ 18:00<br>
+										定休日:第二、第四土曜日・日曜日、祝日
+									<!-- /.globalNaviSmall__information --></div>
+									<ul class="globalNaviSmall__sns">
+										<li><a href="https://www.instagram.com/mbworks_ig/" target="_blank"><img src="img/common/iconInstagram_w.svg" alt="MBworks Instagram　インスタグラム" /></a></li>
+										<li><a href="https://www.facebook.com/people/%E4%BA%AC%E9%83%BD%E3%81%AE%E3%83%99%E3%83%B3%E3%83%84%E5%B0%82%E9%96%80-MBworks/100057332594522/" target="_blank"><img src="img/common/iconFacebook_w.svg" alt="MBworks Facebook　フェイスブック" /></a></li>
+									<!-- /.globalNaviSmall__information --></ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+	
+	<div id="content" class="clearfix">
+
+		<div class="article">
+
+	    	<div class="pageTitleBox">
+			<div class="inBase">
+				<h1 class="pageTitle">見出し見出し見出し見出し見出し見出し見出し見出し見出し</h1>
+				<figure><img src="img/common/imgPageTitle.jpg" alt="ページタイトル背景" /></figure>
+			<!-- /.inBase --></div>
+		<!-- /.pageTitleBox --></div>
+
+		<div class="topicpathBox sM">
+			<div class="inBase"><div class="inBase__inner clearfix">
+				<div class="topicpath">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li>タイトルタイトルタイトル</li>
+						<li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+					</ul>
+				<!-- /.topicpath --></div>
+			<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		<!-- /.topicpathBox --></div>
+
+		<div class="inBase --typeBG01"><div class="inBase__inner clearfix">
+
+				<div class="pageBox sM">
+
+                			<div class="pageBox__content">
+
+						<h2><strong>Title Title Title</strong>見出しが入ります。見出しが入ります。</h2>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h3>見出し3が入りますテキストテキス</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h4>見出し4が入りますテキストテキストテキストテキストテキスト</h4>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<h5>見出し5が入りますテキストテキストテキストテキストテキスト</h5>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+						<ul>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。ULリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>ULリストが入ります。リストが入ります。リストが入ります。</li>
+						</ul>
+
+						<ol>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。OLリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+							<li>OLリストが入ります。リストが入ります。リストが入ります。</li>
+						</ol>
+
+						<table>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキストテキスト</th>
+								<td>テキストテキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキスト</td>
+							</tr>
+							<tr>
+								<th>テキスト</th>
+								<td>テキストテキストテキスト</td>
+							</tr>
+							
+						</table>
+						
+						<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex sM">
+							<div class="wp-block-button is-style-button-style-1">
+								<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル1</a>
+							</div>
+						</div>
+
+						<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex sM">
+							<div class="wp-block-button is-style-button-style-2">
+								<a class="wp-block-button__link wp-element-button" href="https://kodomo.matsumurasika.com/">ボタンスタイル2</a>
+							</div>
+						</div>
+
+						<div class="wp-block-cocoon-blocks-caption-box-1 caption-box block-box not-nested-style cocoon-block-caption-box sM">
+							<div class="caption-box-label block-box-label box-label">
+								<span class="caption-box-label-text block-box-label-text box-label-text">見出し付きテキスト枠</span>
+							</div>
+							<div class="caption-box-content block-box-content box-content">
+								<p>ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります。</p>
+							</div>
+						</div>
+
+						<p class="is-style-paragraph-style-1">段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み段落スタイル囲み</p>
+
+						<p class="is-style-paragraph-style-2">段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ段落スタイルドロップシャドウ</p>
+
+					<!-- /.pageBox__content --></div>
+				<!-- /.pageBox --></div>
+
+
+
+
+				<div class="archiveColumnBox">
+					<div class="archiveColumnBox__inner">
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column"><a href="#">
+							<figure class="archiveColumnBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="コラム画像" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<small class="archiveColumnBox__date">2024.00.00</small>
+							<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							<p class="archiveColumnBox__columnSentence">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</a><!-- /.archiveColumnBox__column --></div>
+
+					<!-- /.archiveColumnBox__inner --></div>
+				<!-- /.archiveColumnBox --></div>
+
+
+				<div class="archiveListBox">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+				<div class="archiveListBox">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+
+				<div class="archiveListBox sM">
+					<a href="#"><span>2022.00.00</span><span>テキストテキストテキストテキストテキストテキテキストテキストテキストテキストテキスト</span></a>
+				<!-- /.archiveListBox --></div>
+
+				<div class="archiveColumnBox">
+					<div class="archiveColumnBox__inner">
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+						<div class="archiveColumnBox__column">
+							<a href="#">
+								<figure class="archiveColumnBox__image">
+									<div class="adjustBox adjustBox--type04">
+										<div class="adjustBox__inner">
+											<img src="img/common/imgSample.jpg" alt="コラム画像" />
+										<!-- /.adjustBox__inner --></div>
+									<!-- /.adjustBox --></div>
+									<small class="archiveColumnBox__date">2024.00.00</small>
+								</figure>
+								<h4 class="archiveColumnBox__columnTitle">ブログ名ブログ名ブログ名ブログ名ブログ名ブログ名</h4>
+							</a>
+							<ul class="archiveColumnBox__category">
+								<li><a href="#">働き方</a></li>
+								<li><a href="#">年収</a></li>
+							</ul>
+						<!-- /.archiveColumnBox__column --></div>
+
+					<!-- /.archiveColumnBox__inner --></div>
+				<!-- /.archiveColumnBox --></div>
+
+				<div class="archiveGalleryBox">
+					<div class="archiveGalleryBox__inner">
+
+						<div class="archiveGalleryBox__column"><div class="archiveGalleryBox__button">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage" title="あああああ"><i class="fa fa-fw icon-search-plus"></i></a>
+							<a href="#" class="archiveGalleryBox__link"><i class="fa fa-fw icon-link"></i></a>
+						</div><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage" title="あああああ">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/no-image-v.png" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/no-image-v.png" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/noImage-square.png" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+
+						<div class="archiveGalleryBox__column"><a href="img/common/imgSample.jpg" class="luminousGallery is-notMovePage">
+							<figure class="archiveGalleryBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/common/imgSample.jpg" alt="" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+						</a><!-- /.archiveGalleryBox__column --></div>
+					<!-- /.archiveGalleryBox__inner --></div>
+				<!-- /.archiveGalleryBox --></div>
+				
+				
+				
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+		<!-- /.article --></div>
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<ul class="footer__navi">
+			<li><a href="<?php echo home_url(); ?>/reason">選ばれる理由</a></li>
+			<li><a href="<?php echo home_url(); ?>/customization">カスタム</a></li>
+			<li><a href="<?php echo home_url(); ?>/maintenance">整備・修理</a></li>
+			<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+			<li><a href="<?php echo home_url(); ?>/coding">コーディング</a></li>
+			<li><a href="<?php echo home_url(); ?>/sale">中古車販売</a></li>
+			<li><a href="<?php echo home_url(); ?>/staff">スタッフ紹介</a></li>
+			<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+			<li><a href="<?php echo home_url(); ?>/blog">施工ブログ</a></li>
+			<li><a href="<?php echo home_url(); ?>/privacy-policy">プライバシーポリシー</a></li>
+		</ul>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">&copy; 2024 MBworks All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><span><img src="img/common/btnRise.svg" alt="ページ上部に戻る" class="wide" /></span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    
+	<div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a href="tel:0752014559">TEL</a>
+		            <a href="<?php echo home_url(); ?>/contact">CONTACT US</a>
+		            <a href="https://page.line.me/232ozwtd?openQrModal=true">OFFICIAL LINE</a>
+	            <!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	<!-- /#btnPageBottom --></div>
+
+	<div class="sideBannerBox">
+    		<div class="sideBannerBox__banner">
+			<a href="<?php echo home_url(); ?>/customization">
+		                <span>カスタムページ</span>
+			</a>
+		<!-- /.sideBanner --></div>
+    		<div class="sideBannerBox__banner">
+			<a href="https://mbworks-recruit.com/" target="_blank">
+	                	<span>整備士採用サイト</span>
+	     		</a>
+		<!-- /.sideBanner --></div>
+	<!-- /.sideBannerBox --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
